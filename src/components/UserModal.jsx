@@ -11,9 +11,7 @@ import { Button } from "./ui/button";
 import { useEffect } from "react";
 
 export default function UserModal({ user, open, setOpen }) {
-	useEffect(() => {
-		console.log("Dialog open state:", open);
-	}, [open]);
+
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
 
